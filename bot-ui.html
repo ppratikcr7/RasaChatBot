@@ -1,0 +1,25 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>ChatBot</title>
+    </head>
+        <body>
+            <h1>Hello!</h1>
+
+<--// this is chatbot design which is use in your website -->
+<div id="webchat"/>
+<script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js"></script>
+<--// Or you can replace latest with a specific version -->
+<script>
+  WebChat.default.init({
+    selector: "#webchat",
+    customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+    socketUrl: "http://localhost:5005",
+    socketPath: "/socket.io/",
+    title: "chatbot",
+    subtitle: "first bot",
+  })
+</script>
+//########################################
+        </body>
+</html>
