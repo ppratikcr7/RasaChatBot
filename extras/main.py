@@ -31,7 +31,6 @@ def ReadText():
     text.set("\n".join(conversation))
     label.update()
 
-    # url = 'http://innovate-yourself.herokuapp.com/webhooks/rest/webhook'  ##change this with your deployed url
     url = 'http://0.0.0.0:5055/webhooks/rest/webhook'  ##change this with your deployed url
     myobj = {
         "message": message,

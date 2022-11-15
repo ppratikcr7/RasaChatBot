@@ -59,7 +59,9 @@ rasa run
 
 Open two terminals and execute following cmds:
 
+conda activate rasa-app
 rasa run -m models --enable-api --cors "*" --debug
+conda activate rasa-app
 rasa run actions
 
 Open index.html file
