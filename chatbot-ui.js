@@ -61,7 +61,6 @@ function init() {
 
 	</div>`
 
-
     chatContainer.innerHTML = template;
 
     //--------------------------- Important Variables----------------------------
@@ -78,7 +77,6 @@ function init() {
     root = document.documentElement;
     chatPopup.style.display = "none"
     var host = ""
-
 
     //------------------------ ChatBot Toggler -------------------------
 
@@ -124,8 +122,6 @@ function init() {
 }
 
 // end of init function
-
-
 
 var passwordInput = false;
 
@@ -199,7 +195,6 @@ function send(message) {
     chatInput.focus();
 }
 
-
 //------------------------------------ Set bot response -------------------------------------
 function setBotResponse(val) {
     setTimeout(function() {
@@ -259,9 +254,6 @@ function setBotResponse(val) {
     }, 500);
 }
 
-
-
-
 function mobileView() {
     $('.chat-popup').width($(window).width());
 
@@ -291,8 +283,6 @@ function chatbotTheme(theme) {
         color: "#B721FF",
         background: "linear-gradient(19deg, #21D4FD 0%, #B721FF 100%)"
     }
-
-
 
     if (theme === "orange") {
         root.style.setProperty('--chat-window-color-theme', orange.color);
